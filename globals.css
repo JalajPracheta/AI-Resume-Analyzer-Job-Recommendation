@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* 🌈 Animated gradient background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #312e81, #0ea5e9);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  overflow-x: hidden;
+  color: white;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🧊 Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ✨ Glow border */
+.glow-border {
+  position: relative;
+  border-radius: 18px;
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 18px;
+  background: linear-gradient(45deg, #7c3aed, #06b6d4, #9333ea);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* 🌌 PREMIUM FLOATING BLOBS */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Smaller + smooth */
+.blob1 {
+  width: 200px;
+  height: 200px;
+  background: #7c3aed;
+  animation: float1 25s ease-in-out infinite alternate;
+}
+
+.blob2 {
+  width: 250px;
+  height: 250px;
+  background: #06b6d4;
+  animation: float2 30s ease-in-out infinite alternate;
+}
+
+.blob3 {
+  width: 180px;
+  height: 180px;
+  background: #9333ea;
+  animation: float3 35s ease-in-out infinite alternate;
+}
+
+/* Smooth movement */
+@keyframes float1 {
+  0% { transform: translate(10vw, 10vh); }
+  100% { transform: translate(60vw, 50vh); }
+}
+
+@keyframes float2 {
+  0% { transform: translate(70vw, 20vh); }
+  100% { transform: translate(20vw, 70vh); }
+}
+
+@keyframes float3 {
+  0% { transform: translate(40vw, 80vh); }
+  100% { transform: translate(80vw, 30vh); }
+}
