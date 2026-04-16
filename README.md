@@ -18,15 +18,15 @@ This project simulates a **real AI career assistant** similar to ChatGPT, Linked
 
 ### 🏠 Landing Page
 
-![Landing](./frontend/public/screenshots/landing.png)
+![Landing](./screenshots/landing.png)
 
 ### 📊 Dashboard (AI Analysis)
 
-![Dashboard](./frontend/public/screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
 
 ### 🧠 Skill Builder
 
-![Skill Builder](./frontend/public/screenshots/skills.png)
+![Skill Builder](./screenshots/skills.png)
 
 ---
 
